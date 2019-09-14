@@ -1,5 +1,4 @@
 package design;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +15,8 @@ public class FortuneEmployee {
      * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
      **/
     public static void main(String[] args) {
-        EmployeeInfo firstEmployee = new EmployeeInfo("Hisham Raihan", 101, "can collector");
-        EmployeeInfo secondEmployee = new EmployeeInfo("Wayel Raihan",102,  "coffee boy");
+        EmployeeInfo firstEmployee = new EmployeeInfo("Hisham Raihan", 101, "Bottle Collector");
+        EmployeeInfo secondEmployee = new EmployeeInfo("Wayel Raihan",102,  "Coffe Runner");
 
 
 //		Map<Integer, List<Integer>> compensationMap = new HashMap<>(); //id, {salary, bonus, pension}
@@ -25,11 +24,11 @@ public class FortuneEmployee {
         //       List<Integer> bonusList = new ArrayList<>(3);  //bonus
 
         //salary
-        firstEmployee.setMonthlySalary(320);
-        secondEmployee.setMonthlySalary(5000);
+        firstEmployee.setMonthlySalary(1000);
+        secondEmployee.setMonthlySalary(3000);
 
-        salaryList.add(firstEmployee.calculateSalary(320));
-        salaryList.add(secondEmployee.calculateSalary(5000));
+        salaryList.add(firstEmployee.calculateSalary(1000));
+        salaryList.add(secondEmployee.calculateSalary(3000));
 
         //numberOfYearsWithCompany
         ArrayList<Integer> numberOfYearsWithCompany = new ArrayList<>();
@@ -47,9 +46,9 @@ public class FortuneEmployee {
         //benefitLayout
 
 
-        System.out.println("Your total annual salary is :::" + firstEmployee.calculateSalary(320));
-        System.out.println("Your total annual bonus is :::" + firstEmployee.calculateEmployeeBonus(1));
-        System.out.println("Your pension will be :::" + firstEmployee.calculateEmployeePension());
+        System.out.println("Your total annual salary is : " + firstEmployee.calculateSalary(1000));
+        System.out.println("Your total annual bonus is : " + firstEmployee.calculateEmployeeBonus(1));
+        System.out.println("Your pension will be :" + firstEmployee.calculateEmployeePension());
 
 
 
@@ -58,3 +57,5 @@ public class FortuneEmployee {
     }
 
 }
+
+

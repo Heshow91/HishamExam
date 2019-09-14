@@ -101,9 +101,9 @@ public class EmployeeInfo {
     public  Integer calculateEmployeePension() {
         int total = 0;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter start date in format (example: May,2015): ");
+        System.out.println("Please enter start date in format (example: April,2016): ");
         String joiningDate = sc.nextLine();
-        System.out.println("Please enter today's date in format (example: August,2017): ");
+        System.out.println("Please enter today's date in format (example: September,15,2017): ");
         String todaysDate = sc.nextLine();
         String convertedJoiningDate = DateConversion.convertDate(joiningDate);
         String convertedTodaysDate = DateConversion.convertDate(todaysDate);
