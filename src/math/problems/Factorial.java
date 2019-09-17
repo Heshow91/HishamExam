@@ -29,6 +29,5 @@ public class Factorial {
         output = fact(n-1)* n;
         return output;
 
-
     }
 }
