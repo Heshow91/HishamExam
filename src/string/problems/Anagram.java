@@ -15,6 +15,8 @@ public class Anagram {
 
         if (ele1 != ele2)
             return false;
+
+
         //Sorting the words will help compare
         //the letters to one another more easily
         Arrays.sort(str1);
